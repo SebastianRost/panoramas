@@ -15,11 +15,12 @@
 	max-height: 100vh;
 }
 
-.miSlider img {
+.miSlider img,
+.miSlider video {
 	width: 100%;
 	max-height: 100vh;
 	height: 100vh;
-	object-fit:cover;
+	object-fit: cover;
 	vertical-align: center;
 	transition: 2s;
 }
@@ -97,7 +98,13 @@
 	transform: translate(-50%, -50%);
 	font-family: "Signika Negative", sans-serif;
 	font-size: 35px;
+	/* animation: insert 0s 5s both; */
 }
+
+/* @keyframes insert {
+	0% {visibility: hidden;}
+	100% {visibility: visible; left:50vw; top:50vh;}
+  } */
 
 @media (max-width: 768px) {
 	.carrousel-title {
